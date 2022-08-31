@@ -28,13 +28,13 @@ public class DataInitializer {
 
         User bob = new User();
         bob.setEmail("bob");
-        bob.setPassword("1234");
+        bob.setPassword("123");
         bob.setRoles(new HashSet<>(roles));
         userService.add(bob);
 
         User alice = new User();
         alice.setEmail("alice");
-        alice.setPassword("1234");
+        alice.setPassword("12345");
         alice.setRoles(Set.of(roles.get(0)));
         userService.add(alice);
     }
